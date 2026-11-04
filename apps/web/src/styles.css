@@ -1,0 +1,48 @@
+/* Paleta de HMI de alto desempeño: gris neutro, color sólo para lo anormal. */
+:root {
+  --bg: #d5d8da;
+  --surface: #e9ebec;
+  --ink: #1c262c;
+  --muted: #56636b;
+  --line: #a9b0b5;
+  --amber: #e3a21a;
+  --red: #b8231b;
+  --green: #2e7a3c;
+  --hazard-dark: #22221f;
+  --font: 'Barlow Semi Condensed', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', 'Barlow Semi Condensed', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.4 var(--font);
+}
+
+#app {
+  min-height: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

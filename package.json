@@ -1,0 +1,22 @@
+{
+  "name": "sentinelhack2026",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.21.0",
+  "engines": {
+    "node": ">=24.12"
+  },
+  "scripts": {
+    "test": "node --test \"packages/*/src/**/*.test.ts\" \"apps/api/src/**/*.test.ts\" \"apps/web/src/**/*.test.ts\"",
+    "typecheck": "pnpm -r typecheck",
+    "dev:api": "pnpm --filter @sentinel/api dev",
+    "dev:web": "pnpm --filter @sentinel/web dev",
+    "e2e": "playwright test -c tests/e2e/playwright.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.2",
+    "typescript": "6.0.3"
+  }
+}

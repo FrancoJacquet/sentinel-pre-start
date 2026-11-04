@@ -1,0 +1,70 @@
+{
+  "model": "sam-3.1",
+  "frameId": "f-20261103T165838413-d307c6",
+  "latencyMs": 2404,
+  "result": {
+    "status": "RISK_OBSERVED",
+    "source": "model",
+    "detail": "sam-3.1: 1 person(s) in zone of 1 detected (request 1/1)"
+  },
+  "simulation": {
+    "label": "SIMULATION",
+    "truth": {
+      "operatorInZone": true
+    }
+  },
+  "requestsUsed": 1,
+  "response": {
+    "metadata": {
+      "include_confidence": "true",
+      "mask_encoding": "one_bit"
+    },
+    "top_logprobs": 0,
+    "temperature": 1,
+    "top_p": 1,
+    "service_tier": "auto",
+    "model": "sam-3.1",
+    "background": false,
+    "tools": [],
+    "tool_choice": "auto",
+    "truncation": "disabled",
+    "id": "resp_6aea15a654f86ad3d2674809",
+    "object": "response",
+    "status": "completed",
+    "created_at": 1793725862,
+    "completed_at": 1793725862,
+    "error": null,
+    "incomplete_details": null,
+    "output": [
+      {
+        "type": "message",
+        "id": "msg_b018594f-2685-401a-92d2-07087ae46211",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "output_text",
+            "text": "<0f>0<|box;x1=618;y1=314;x2=663;y2=475;w=1280;h=720;c=0.8865247964859009|><|mask;x=0;y=0;c=0.8865247964859009;data=162,46,!!!!!zF%s?o65L$!HA-VQ5[W]djaCJ4?%1O3vo{%VP%K#ymgT&HfB?&dM:KNa3^FMAKCJgkwZV)p#GB5B&[KQ]lPk{rBPc'd8pzHOniF@zik1=|>\n",
+            "annotations": [],
+            "logprobs": []
+          }
+        ],
+        "status": "completed"
+      }
+    ],
+    "instructions": null,
+    "usage": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 0,
+      "images_processed": 1
+    },
+    "parallel_tool_calls": true,
+    "store": false
+  }
+}

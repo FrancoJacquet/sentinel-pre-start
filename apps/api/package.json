@@ -1,0 +1,14 @@
+{
+  "name": "@sentinel/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=../../.env src/main.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@sentinel/contracts": "workspace:*",
+    "ws": "8.22.0"
+  },
+  "devDependencies": { "@types/ws": "8.18.2" }
+}

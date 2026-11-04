@@ -1,0 +1,27 @@
+{
+  "frame": {
+    "frameId": "f-20261103T165838413-d307c6",
+    "cameraId": "cam-01",
+    "receivedAt": "2026-11-03T16:59:23.023Z",
+    "captureTs": "2026-11-03T16:59:22.997Z",
+    "width": 1280,
+    "height": 720,
+    "mime": "image/jpeg",
+    "sceneRevision": "crane-v1",
+    "sha256": "ef303af04d7ec23713690f2b99f99ee1812c99269cfe84f387a7e667d7c70a45",
+    "bytes": 173380
+  },
+  "evaluation": {
+    "status": "INFERENCE_DISABLED",
+    "source": "none",
+    "adapter": "disabled",
+    "observedAt": null,
+    "detail": "META_API_ENABLED=false"
+  },
+  "simulation": {
+    "label": "SIMULATION",
+    "truth": {
+      "operatorInZone": true
+    }
+  }
+}

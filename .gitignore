@@ -1,0 +1,41 @@
+.launcher/
+# Secretos: sólo en .env, nunca en git
+.env
+.env.*
+!.env.example
+
+# Dependencias y build
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.vite/
+# Private notes (never published)
+docs/privado/
+# Evidencias e imágenes grandes (frames, clips, capturas de inferencia)
+/evidence/
+evidencias/
+**/evidence-store/
+*.mp4
+*.webm
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+*.glb
+*.gltf
+*.pt
+*.onnx
+*.safetensors
+# Frames crudos y capturas de cámara virtual (los curados van a docs/assets/)
+**/frames/
+**/captures/
+**/snapshots-raw/
+# Editor / SO
+.DS_Store
+.claude/worktrees/
+# Assets 3D de terceros: se bajan con scripts/fetch-assets.mjs (manifiesto con SHA-256)
+apps/web/public/assets/
